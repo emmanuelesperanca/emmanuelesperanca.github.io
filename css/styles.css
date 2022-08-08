@@ -3,7 +3,7 @@
 body{
   text-align: center;
   font-family: 'Plasto Trial';
-  font-weight: 100;
+  font-weight: 500;
 }
 
 em{
@@ -109,7 +109,7 @@ hr {
 /* ------------------Landing page------------------- */
 /*#region*/
   .home-box{
-    width: 510px;
+    width: fit-content;
     margin: 280px auto 0;
     position: relative;
   }
@@ -126,7 +126,7 @@ hr {
   }
 
   .home{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -163,8 +163,9 @@ hr {
   }
 
   #home-section h1{
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 900;
+    text-align: left;
   }
 
   #home-section h3{
@@ -174,8 +175,9 @@ hr {
   }
 
   #home-section h4{
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 100;
+    text-align: left;
   }
 
   .bubble-text{
@@ -189,7 +191,6 @@ hr {
 /*#region*/
   #about-me-section{
     position: relative;
-    top: 600px;
     min-height: 800px;
   }
 
@@ -198,7 +199,7 @@ hr {
     height: 100%;
     width: 450px;
     text-align: justify;
-    padding: 50px 0 0;
+    padding: 50px 20px 0;
     margin-right: 50px; 
   }
 
@@ -212,11 +213,11 @@ hr {
 /* ------------------About me----------------------- */
 
 
-/* ----------------My Skills----------------------- */
+/* -------------------Cards----------------------- */
 /*#region*/
   #my-skill-section{
     position: relative;
-    top: 600px;
+
   }
 
   #my-skill-section hr {
@@ -299,7 +300,7 @@ hr {
   .card__title {
     font-size: 1em;
     margin: auto;
-    color: #6A515E;
+    color: #292929;
     
   }
 
@@ -307,13 +308,13 @@ hr {
     display: block;
     margin: 1em 0;
     font-size: .8em; 
-    color: #D7BDCA;  
+    color: #424242;  
   }
 
   .card__description {
     padding: 0 1em 1em;
     margin: 0;
-    color: #D7BDCA;
+    color: #252525;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -321,7 +322,7 @@ hr {
   } 
 
 /*#endregion*/   
-/* ----------------My Skills----------------------- */
+/* -------------------Cards----------------------- */
 
 
 /* ----------------Skills Wheel------------------ */
@@ -335,7 +336,7 @@ hr {
 /* STYLING */
 .container {
   display: flex;
-  height: 100vh;
+  
 }
 
 .tabs-container { 
@@ -347,12 +348,12 @@ hr {
 .tabs {
   margin-bottom: 28px; 
   display: flex;
-    justify-content: space-between;
+
 }
 
 .tabs a{
   cursor: pointer;
-  width: 400px;
+  width: 170px;
   text-align: center;
   font-weight: bold;
 
@@ -367,12 +368,15 @@ hr {
 }
 
 /* Style the tab content */
+.content{
+  position: relative;
+
+}
+
 .tabcontent {
-  padding: 30px;
-  min-height: 288px;
   display: none;    
   border-radius: 18px;
-  background: #f4f4f4;
+  background:rgb(255, 255, 255);
   box-shadow:  3px 3px 6px #bebebe, 
                -3px -3px 6px #ffffff;
 }
@@ -387,8 +391,6 @@ hr {
 
 .content-text{
   text-align: justify;
-  width: 420px;
-
 }
 
 .tabcontent p:last-child {
@@ -518,7 +520,7 @@ input:checked + .slider:before {
 }
 
 .progress-bar-wrap{
-  width: 200px;
+  max-width: 200px;
 }
 
 .progress .progress-bar{
@@ -747,7 +749,12 @@ input:checked + .slider:before {
 
 /* ----------------Contact-me--------------------- */
 /*#region*/
-
+  #contact-section{
+    position: relative;
+    min-height: 600px;
+    display: flexbox;
+    margin-top: 20px;
+  }
 
 
   form { max-width:420px; margin:50px auto; }
@@ -770,8 +777,6 @@ input:checked + .slider:before {
   }
 
   .contact-box{
-    position: relative;
-    margin-top: 700px;
     padding: 30px;
     background-color: #49C7ED;
   }
