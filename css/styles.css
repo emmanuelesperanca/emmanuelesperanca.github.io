@@ -479,33 +479,33 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.darkmode .tabcontent .read-more-link a {
+/* .darkmode .tabcontent .read-more-link a {
   color: #d4d4d4;
-}
-.darkmode .tabcontent {
+} */
+/* .darkmode .tabcontent {
   background: linear-gradient(145deg, #1c1d21, #17181c);
   box-shadow:  3px 3px 6px #101114, 
                -3px -3px 6px #24252a;
-}
-.darkmode .tabs a.active {
+} */
+/* .darkmode .tabs a.active {
   background: #1A1B1F;
   box-shadow: inset  3px 3px 6px #101114, 
               inset -3px -3px 6px #24252a; 
   color: #6a6a6a;
-}
-.darkmode .tabs a:hover {
+} */
+/* .darkmode .tabs a:hover {
   background: #141414;
   color: #bbb;
-}
-.darkmode .tabs a {
+} */
+/* .darkmode .tabs a {
   background: linear-gradient(145deg, #1c1d21, #17181c);
   box-shadow:  3px 3px 6px #101114, 
                -3px -3px 6px #24252a;
-}
-.darkmode .container {
+} */
+/* .darkmode .container {
   background-color: #1A1B1F;
   color: #8a8a8a;
-}
+} */
 
 /* Progress bars */
 .progress{
