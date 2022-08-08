@@ -1,0 +1,891 @@
+/* --------------------Root------------------------ */
+/*#region*/
+body{
+  text-align: center;
+  font-family: 'Plasto Trial';
+  font-weight: 100;
+}
+
+em{
+  font-family:sans-serif;
+  font-size: 14px;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 60px;
+}
+
+h2{
+  font-weight: 900;
+  font-size: 40px;
+}
+hr {
+    border: none;
+    background: linear-gradient(90deg, rgba(73,199,237,1) 0%, rgba(219,108,123,1) 50%, rgba(219,108,123,1) 50%, rgba(73,199,237,1) 100%);    text-align: center;
+    opacity: 1;
+    height: 5px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+}
+
+/*#endregion*/
+/* --------------------Root------------------------ */
+
+
+/* ------------------Navbar------------------------ */
+/*#region*/
+#navbarNav{
+  position: relative;
+  margin-right: 10px;
+}
+
+#navbar{
+  background-color: #49C7ED;
+}
+
+#switch{
+  margin-left: 30px;
+  transform: scale(70%);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  height: 40px;
+  z-index:-1;
+}
+
+.label {
+  background-color: #FFE070;
+  border-radius: 50px;
+  border-style: solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+  border-color: #f39c12;
+}
+
+.label .ball {
+  background-color: #FFF171;
+  border-radius: 50%;
+  position: absolute;
+  border-style: solid;
+  left: 0px;
+  height: 23px;
+  width: 23px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+  border-color: #ff7135;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.nightmode{
+  max-height: 40px;
+
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+/*#endregion*/
+/* ------------------Navbar------------------------ */
+
+
+/* ------------------Landing page------------------- */
+/*#region*/
+  .home-box{
+    width: 510px;
+    margin: 280px auto 0;
+    position: relative;
+  }
+
+  #home-section{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: 50%;
+    justify-content: 50%;
+    -ms-flex-align: center;
+    align-items: center;
+
+  }
+
+  .home{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .home-background{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+  }
+
+  .home-me{
+    position: absolute;
+    transform: scale(25%);
+    display:block;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    top: -220px;
+  }
+
+
+  .home-btn{
+    background-color: #DB6C7B;
+    color: #000;
+    margin: 20px 0;
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  #home-section h1{
+    font-size: 80px;
+    font-weight: 900;
+  }
+
+  #home-section h3{
+    font-size: 60px;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  #home-section h4{
+    font-size: 34px;
+    font-weight: 100;
+  }
+
+  .bubble-text{
+    height: 100px;
+  }
+/*#endregion*/
+/* ------------------Landing page------------------- */
+
+
+/* ------------------About me----------------------- */
+/*#region*/
+  #about-me-section{
+    position: relative;
+    top: 600px;
+    min-height: 800px;
+  }
+
+  .about-me-box{
+    position: relative;
+    height: 100%;
+    width: 450px;
+    text-align: justify;
+    padding: 50px 0 0;
+    margin-right: 50px; 
+  }
+
+  .about-wrap{
+    position: relative;
+    background-color: rgba(75,200,237,1);
+  }
+
+
+/*#endregion*/
+/* ------------------About me----------------------- */
+
+
+/* ----------------My Skills----------------------- */
+/*#region*/
+  #my-skill-section{
+    position: relative;
+    top: 600px;
+  }
+
+  #my-skill-section hr {
+    border: none;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,108,123,1) 50%, rgba(219,108,123,1) 50%, rgba(255,255,255,1) 100%);
+    opacity: 1;
+    height: 5px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+  }
+  .tittle-skill{
+    position: relative;
+    padding-top: 50px;
+  }
+
+  :root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: 100px 100px 53px 53px ;
+    overflow: hidden;
+    text-decoration: none;
+    
+  }
+
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+
+  .card__header {
+    position: relative;
+    gap: 2em;
+    padding: 1em;
+    border-radius: 30px;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+
+  .card__title {
+    font-size: 1em;
+    margin: auto;
+    color: #6A515E;
+    
+  }
+
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+
+  .card__description {
+    padding: 0 1em 1em;
+    margin: 0;
+    color: #D7BDCA;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  } 
+
+/*#endregion*/   
+/* ----------------My Skills----------------------- */
+
+
+/* ----------------Skills Wheel------------------ */
+/*#region*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* STYLING */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.tabs-container { 
+  width: 1000px;
+  margin: auto;
+}
+
+/* Style the tabs */
+.tabs {
+  margin-bottom: 28px; 
+  display: flex;
+    justify-content: space-between;
+}
+
+.tabs a{
+  cursor: pointer;
+  width: 400px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* Styling for active tab */
+.tabs a.active {
+  transform: scale(120%);
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 50px 4px rgba(0,0,0,0.48); 
+  box-shadow: 0px 0px 50px 4px rgba(0,0,0,0.48);
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 30px;
+  min-height: 288px;
+  display: none;    
+  border-radius: 18px;
+  background: #f4f4f4;
+  box-shadow:  3px 3px 6px #bebebe, 
+               -3px -3px 6px #ffffff;
+}
+
+.content .active {
+  display: block;
+}
+
+.tabcontent p {
+  margin: 12px 0;
+}
+
+.content-text{
+  text-align: justify;
+  width: 420px;
+
+}
+
+.tabcontent p:last-child {
+  margin-bottom: 0;
+}
+
+.tabcontent .read-more-link a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.icon {
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+/* THE DARKMODE SWITCH */ 
+.dark-mode-switch {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  pointer-events: none;
+  display: none;
+}
+.dark-mode-switch .switch {
+    margin-left: 4px;
+}
+.switch-label {
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+/* the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  margin-left: 4px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1A1B1F;
+  transition: .2s;
+  box-shadow:  2px 2px 3px #ffffff, 
+               -2px -2px 3px #bebebe;
+}
+.darkmode .slider {
+  box-shadow:  2px 2px 3px #34353a, 
+               -2px -2px 3px #000104;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 2px;
+  background: #9294b8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #f4f4f4;
+}
+input:checked + .slider:before {
+  transform: translateX(21px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 11px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.darkmode .tabcontent .read-more-link a {
+  color: #d4d4d4;
+}
+.darkmode .tabcontent {
+  background: linear-gradient(145deg, #1c1d21, #17181c);
+  box-shadow:  3px 3px 6px #101114, 
+               -3px -3px 6px #24252a;
+}
+.darkmode .tabs a.active {
+  background: #1A1B1F;
+  box-shadow: inset  3px 3px 6px #101114, 
+              inset -3px -3px 6px #24252a; 
+  color: #6a6a6a;
+}
+.darkmode .tabs a:hover {
+  background: #141414;
+  color: #bbb;
+}
+.darkmode .tabs a {
+  background: linear-gradient(145deg, #1c1d21, #17181c);
+  box-shadow:  3px 3px 6px #101114, 
+               -3px -3px 6px #24252a;
+}
+.darkmode .container {
+  background-color: #1A1B1F;
+  color: #8a8a8a;
+}
+
+/* Progress bars */
+.progress{
+  height: 15px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: visible;
+  line-height: 15px;
+  margin: 20px 0 40px 0;
+}
+
+.progress-bar-wrap{
+  width: 200px;
+}
+
+.progress .progress-bar{
+  border-radius: 20px;
+  position: relative;
+  background-color: #49C7ED;
+  animation: animate-positive 2s;
+}
+
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive{
+  0% { width: 0%; }
+}
+
+/* Content Images */
+
+.content-images{
+  border-left: solid #49C7ED 2px;
+  padding-top: 12px;
+}
+
+.content-image-1 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/front-skills/tindog.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-2 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/front-skills/portfolio-v1.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-3 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/back-skills/spotify-project.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-4 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/back-skills/automated-application.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-5 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/game-skills/under-cons.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-6 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/game-skills/pong.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-7 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/uiux-skills/hotel.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-8 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/uiux-skills/chefonline.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-9 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/eng-skills/modelagem.png");
+  background-color: black;
+  background-size: cover;
+}
+
+.content-image-10 {
+  border-radius: 60px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  top:0; right: 0; left: 0; bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  background: url("/images/eng-skills/simulation.png");
+  background-color: black;
+  background-size: cover;
+}
+
+#tabcontent6 .content-text{
+  width: auto;
+}
+
+.overlay {
+  border-radius: 60px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background: rgba(134, 202, 239, 0.9);
+  opacity: 0;
+  transition: all 1s;
+  color: #000;
+  font-size: 14px;
+}
+
+.overlay .items {
+  padding: 30px 20px;
+  
+  letter-spacing: 3px;
+}
+
+.overlay .head {
+  font-size: 20px;
+
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+
+.overlay .head  hr {
+  display: block;
+  width: 0; 
+  border: none;
+  border-bottom: solid 2px;
+  position: absolute;
+  bottom: 0; left:20px;   
+  transition: all .5s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+.content-images:hover .overlay  .head {
+  transform: translateY(0px);
+}
+.content-images:hover .overlayhr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+/*#endregion*/
+/* ----------------Skills Wheel------------------ */
+
+
+/* ----------------Contact-me--------------------- */
+/*#region*/
+
+
+
+  form { max-width:420px; margin:50px auto; }
+
+  .feedback-input {
+    color:rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+
+  .contact-box{
+    position: relative;
+    margin-top: 700px;
+    padding: 30px;
+    background-color: #49C7ED;
+  }
+
+  .feedback-input:focus { border:2px solid #DB6C7B; }
+
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+
+  [type="submit"] {
+    
+    width: 100%;
+    background:#DB6C7B;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(0, 0, 0);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#991c1c; }
+/*#endregion*/
+/* ----------------Contact-me--------------------- */
+
+
+/* ------------------Footer---------------------- */
+/*#region*/
+  .footer-div{
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#000000;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  footer ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+
+  footer li {
+    padding:0 10px;
+  }
+
+  footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+
+  footer ul a:hover {
+    opacity:1;
+  }
+
+  footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+
+  footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  footer .social > a:hover {
+    opacity:0.9;
+  }
+
+  footer .copyright {
+    margin-top:30px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  #footer-section{
+    background-image: url(/images/home/footer-1.png);
+    background-clip: content-box;
+  }
+
+  #footer-section h1{
+    margin: 50px auto 200px;
+    position: relative;
+  }
+/*#endregion*/
+/* ------------------Footer---------------------- */
