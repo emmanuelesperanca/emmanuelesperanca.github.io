@@ -1,0 +1,170 @@
+body{
+    text-align: center;
+    font-family: 'Figtree';
+    font-weight: 300;
+    padding: 0 15%;
+    background-color: rgba(73,199,237,1);
+}
+  
+.container{
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Figtree';
+    font-weight: 900;
+    font-size: 60px;
+    text-align: left;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border: solid 1px;
+    border-radius: 30%;
+    padding: 8px;
+}
+
+#page .container{
+    padding: 1em 1em 0 1em;
+    display: grid;
+    text-align: center;      
+    grid-auto-flow: column;   
+
+}
+#socials .container{
+    padding: 1em 1em 0 1em;
+    display: grid;
+    text-align: center;      
+    grid-auto-flow: column;   
+
+}
+
+#header .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 75% 25%;      
+}
+
+#header .container div{
+    padding: 1em 0;
+    
+
+}
+
+img{
+    width: 90%;
+    border-radius: 50%;
+    border: solid 4px rgba(73,199,237,1);
+}
+
+#presentation .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+}
+
+#experience .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 70% 30%;
+}
+
+.container div{
+    padding-bottom: 20px;
+}
+
+#hardskills .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 50% 50%;   
+}
+
+.border-blue{
+    padding-top: 1em;
+    padding: 0 1em;
+    border-left: solid  rgba(73,199,237,1) ;
+}
+
+#hardskills ul{
+    padding: 1em;
+    padding: 0 2em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 50% 50%;
+    border-left: solid  rgba(73,199,237,1) ;
+}
+
+#softskills .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+}
+
+#softskills ul{
+    margin-top: 15px;
+    padding: 1em;
+    padding: 0 2em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 33% 33% 33%;
+    border-left: solid  rgba(73,199,237,1) ;
+}
+
+#courses .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 70% 30%;
+ 
+}
+
+#formation .container{
+    padding: 1em;
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 70% 30%;
+}
+
+@media only screen and (max-width: 750px)  {
+
+    body{
+        text-align: center;
+        font-family: 'Figtree';
+        font-weight: 300;
+        background-color: rgba(73,199,237,1);
+        padding: 0%;
+    }
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+    #softskills .ul{
+        margin-top: 15px;
+        display: grid;
+        text-align: justify;
+        padding: 0px;
+        grid-template-columns: 33% 33% 33%;
+
+    }
+    #hardskills .container{
+        padding-left: 10px;
+    }
+
+    #softskills .container{
+        padding-left: 10px;
+    }
+
+    #hardskills ul{
+        display: grid;
+        text-align: justify;
+        padding: 0px;
+        grid-template-columns: 50% 50%;
+
+    }
+
+}
