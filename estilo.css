@@ -1,0 +1,59 @@
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #3a5a40;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #3a5a40;
+}
+
+/* Estilo do container do botão */
+.botao-especial-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilo do botão que leva para a surpresa */
+.botao-especial {
+    display: inline-block;
+    background-color: #a3b18a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o rato por cima do botão */
+.botao-especial:hover {
+    background-color: #588157;
+}
